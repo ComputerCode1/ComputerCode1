@@ -13,7 +13,6 @@ def login():
 repeat = login()
 
 
-
 # Consider this snippet from ./Login.py:
 # users = {'Code1': 'login1', 'Name': 'login1', 'User1': 'Pass1'
 print("Security Check")
