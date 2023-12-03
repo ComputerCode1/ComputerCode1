@@ -1,1 +1,29 @@
-System Code
+  users = {'Code1': 'login1', 'Name': 'login1', 'User1': 'Pass1'}
+
+
+def login():
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+
+    if username in users and users[username] == password:
+        print("Login successful!")
+    else:
+        print("Invalid username or password. Please try again")
+
+repeat = login()
+
+
+
+# Consider this snippet from ./Login.py:
+# users = {'Code1': 'login1', 'Name': 'login1', 'User1': 'Pass1'
+print("Security Check")
+
+
+# Consider this snippet from ./New.py:
+birth_year = input('Birth year: ')
+age = 2023 - int(birth_year)
+print(f'You are {age} years old.')
+
+weight_lbs = input('Weight (lbs): ')
+weight_kg = int(weight_lbs) * 0.45
+print(weight_kg)
