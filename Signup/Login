@@ -1,0 +1,23 @@
+Py.Project/script user Sign-up match Sign-in
+
+def signup(users):  # Pass the 'users' dictionary as an argument
+    username = input("Enter a new username: ")
+    password = input("Enter a new password: ")
+    users[username] = password
+    print("Signup successful!")
+
+users = {}  # Define an empty 'users' dictionary
+
+signup(users)  # Pass the 'users' dictionary to the function
+
+
+while True:
+    print("Enter username")
+    username = input()
+    print("Enter password")
+    pword = input()
+    if username in users and users[username] == pword:  # Match username and password from the 'users' dictionary
+        print("Access granted to World!")
+        break # Exit the loop
+    else:
+        print("Wrong username and / or password") # Will repeat
